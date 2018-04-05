@@ -4,8 +4,7 @@ using namespace std;
 struct node
 {
 	int data;
-	struct node* left;
-	struct node* right;
+	struct node* left, right;
 };
 
 struct node* newNode(int data)
@@ -28,7 +27,7 @@ int main()
 	root->left->left= newNode(4);
 	root->left->right = newNode(5); 
 
-	printf("\nInorder traversal of binary tree is \n");
+	printf("\nInorder traversal of tree is \n");
 	printInorder(root); 
 
 	getchar();
