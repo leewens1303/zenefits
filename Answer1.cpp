@@ -1,15 +1,22 @@
 #include <iostream>
 using namespace std;
 
-struct node 
+struct node
 {
-	int value;
-	struct node*left, *right;
-}
+	int data;
+	struct node* left;
+	struct node* right;
+};
 
-void output(struct node*){
-    
-    inorder traversal geeksforgeeks
+struct node* newNode(int data)
+{
+	struct node* node = (struct node*)
+								malloc(sizeof(struct node));
+	node->data = data;
+	node->left = NULL;
+	node->right = NULL;
+
+	return(node);
 }
 
 	
